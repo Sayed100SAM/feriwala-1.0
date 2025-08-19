@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Internal CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -26,53 +26,45 @@
     .star-yellow {
       color: #fbbf24;
     }
-  </style>
+  .navbar-nav .nav-link {
+    display: inline-block !important;
+    color: #000 !important;   /* black text */
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+</style>
+
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm custom-navbar sticky-top bg-white">
-        <div class="container py-1">
-            <a class="navbar-brand" href="index.html"><img src="./images/logoo.png"
-                    width="125" class="img-fluid" alt="logo"></a>
+<nav class="navbar navbar-expand-sm custom-navbar sticky-top bg-white">
+  <div class="container py-1">
+    <a class="navbar-brand" href="index.html">
+      <img src="./images/logoo.png" width="125" class="img-fluid" alt="logo">
+    </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-left">
-                      <li class="nav-item"">
-                        <a class="nav-link fw-bold text-black" href="#Home"><i class="fa-solid fa-house-user"></i> &nbsp;Home &nbsp; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#Service"><i class="fa-brands fa-servicestack"></i> &nbsp;Service &nbsp; </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#features"><i class="fa-solid fa-basket-shopping"></i> &nbsp;Features &nbsp; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#Sale"><i class="fa-regular fa-star"></i> &nbsp;Sale &nbsp; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#Cart"><i class="fa-solid fa-cart-shopping"></i>&nbsp; Cart <b>(৳৫০০)</b> &nbsp; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#Login"><i class="fa-solid fa-right-to-bracket"></i> &nbsp;Login &nbsp; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#Sign Up"><i class="fa-solid fa-user-plus"></i> &nbsp;Sign Up &nbsp; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-black" href="#app"><i class="fa-solid fa-mobile-screen"></i> &nbsp;App &nbsp; &nbsp; &nbsp;<i class="fa-solid fa-bars"></i></a>
-                    </li>
-                </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#Home"> &nbsp; &nbsp; &nbsp; &nbsp; Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#Service"> &nbsp; &nbsp;  &nbsp; &nbsp;Service</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#features"> &nbsp; &nbsp; &nbsp; &nbsp; Features</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#Sale"> &nbsp; &nbsp; &nbsp; &nbsp; Sale</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#Cart"> &nbsp; &nbsp; &nbsp; &nbsp; Cart <b>(৳5০০)</b></a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#Login"> &nbsp; &nbsp;  &nbsp; &nbsp;Login</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#SignUp"> &nbsp; &nbsp;  &nbsp; &nbsp;Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-black" href="#app">  &nbsp; &nbsp; &nbsp; &nbsp;App</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-            </div>
-        </div>
-    </nav>
 
         <!-- Hero Section -->
          <div class="container-fluid hero-container d-flex justify-content-center align-items-center">
@@ -204,7 +196,7 @@
     </div> -->
     <br>
     <br>
-<body class="bg-white text-slate-900 font-sans p-5">
+<div class="bg-white text-slate-900 font-sans p-5">
   <section class="max-w-4xl mx-auto">
    <h1 class="text-4xl font-extrabold mb-1">
     Services
@@ -501,7 +493,7 @@
       </span>
      </div>
      <h2 class="text-xl font-semibold leading-snug mb-1">
-      মায়ের দোয়া হার্ডওয়্যার
+      মায়ের দোয়া হার্ডওয়্যার </h2>
      <div class="flex items-center mb-4">
       <div class="flex space-x-0.5 text-yellow-400">
        <i class="fas fa-star star-yellow">
@@ -919,12 +911,12 @@
     </article>
    </div>
   </section>
- </body>
+</div>
 
     <br>
     <br>
    <!-- shops -->
-<body class="bg-white text-slate-900 font-sans p-5">
+<div class="bg-white text-slate-900 font-sans p-5">
   <section class="max-w-4xl mx-auto">
    <h1 class="text-4xl font-extrabold mb-1 ">
     Shops
@@ -1134,11 +1126,11 @@
 
    </div>
   </section>
- </body>
+</div>
     <br>
     <br>
     <!-- food items -->
-    <body class="bg-white text-slate-900 font-sans p-5 ">
+    <div class="bg-white text-slate-900 font-sans p-5 ">
   <section class="max-w-4xl mx-auto">
    <h1 class="text-4xl font-extrabold mb-1">
     Food Items
@@ -1227,7 +1219,7 @@
 
    </div>
   </section>
- </body>
+    </div>
     <!-- Why Choose Us -->
     <div class="container-fluid why-us-container mt-5 py-5">
         <div class="container">
@@ -1477,6 +1469,10 @@
     <footer>
         <p class="mb-0 py-3 footer-font text-center bg-footer">Copyright &copy; 2025 Developed By Candy Crush | All Rights Reserved</p>
     </footer>
+    <!-- Bootstrap JS (needed for navbar toggler) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HoA7Zl6V1z4+9iQm7Kj4l2T5D+ny5xUtrZj7lC4QG7h8T6q3F1Xxv9jvBx5mJp6k" 
+        crossorigin="anonymous"></script>
 
 </body>
 
